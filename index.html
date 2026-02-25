@@ -45,20 +45,22 @@
 
     <section class="relative h-screen w-full flex items-center overflow-hidden">
         <div id="bg-container" class="absolute inset-0 z-0">
-            <div id="bg1" class="fade-transition absolute inset-0 opacity-100">
-                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG90ZzRqamcxbzR3cTRzdG8wc3llbjZhYzdocGNmcmxrOW9iNXJvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/erZedjYqVvChV2j1GD/giphy.gif" class="w-full h-full object-cover game-banner">
-            </div>
-            <div id="bg2" class="fade-transition absolute inset-0 opacity-0">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZueHlhNXZxeHlyemZueHlhNXZxeHlyemZueHlhNXZxeHlyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L8G62K8J7C3J6/giphy.gif" class="w-full h-full object-cover game-banner">
-            </div>
-            <div id="bg3" class="fade-transition absolute inset-0 opacity-0">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjB6amlyMHJpZWpsY3h3bXF6ZXZ4Z3p4Z3p4Z3p4Z3p4Z3p4Z3p4JmVwP12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMGpxx33TdqyM8/giphy.gif" class="w-full h-full object-cover game-banner">
-            </div>
+           <div id="bg-container" class="absolute inset-0 z-0">
+    <div id="bg1" class="fade-transition absolute inset-0 opacity-100">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVnenVpMnR4NDRqam8yajVwMm4xem81M2NlMzN1Ynl6NzN6ZnludyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/iB3WYRmlJXwPvHMyFY/giphy.gif" class="w-full h-full object-cover game-banner">
+    </div>
+    <div id="bg2" class="fade-transition absolute inset-0 opacity-0">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNndjNnE2cDQ4Nm1zNDY5bDc1NG41MjZkejBveTZ0eHg3ZzRtZ2tvayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/NMmZdltHWoMbNqSXas/giphy.gif" class="w-full h-full object-cover game-banner">
+    </div>
+    <div id="bg3" class="fade-transition absolute inset-0 opacity-0">
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHZsMG16dTQ4ZXkwemE4MHEybnl0YjRwa281ZDVneDV5NHc5MmYycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/owBHUsUNGJMk23NJMq/giphy.gif" class="w-full h-full object-cover game-banner">
+    </div>
+</div>
         </div>
         <div class="relative z-10 container mx-auto px-8 md:px-20">
             <div class="max-w-4xl">
                 <div id="info1" class="game-info fade-transition block opacity-100">
-                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter italic">MOB <br> <span class="text-blue-500">CONTROL</span></h1>
+                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter italic">SOUTH <br> <span class="text-blue-500">PARK</span></h1>
                     <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">The always fresh, oddly satisfying strategy game.</p>
                 </div>
                 <div id="info2" class="game-info fade-transition hidden opacity-0">
@@ -66,22 +68,13 @@
                     <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">Clear the dots and enjoy the smooth puzzle experience.</p>
                 </div>
                 <div id="info3" class="game-info fade-transition hidden opacity-0">
-                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter text-yellow-400 italic">HELIX <br> <span class="text-white">JUMP</span></h1>
+                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter text-yellow-400 italic">FALL <br> <span class="text-white">GUY</span></h1>
                     <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">An exciting adventure of the bouncing ball.</p>
                 </div>
 
                 <div class="flex space-x-4 mb-12">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="h-10 md:h-12 cursor-pointer transition hover:scale-105">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-10 md:h-12 cursor-pointer transition hover:scale-105">
-                </div>
-
-                <div class="flex space-x-4">
-                    <button onclick="changeSlide('prev')" class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                        <i class="fa-solid fa-chevron-left text-lg"></i>
-                    </button>
-                    <button onclick="changeSlide('next')" class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                        <i class="fa-solid fa-chevron-right text-lg"></i>
-                    </button>
                 </div>
             </div>
         </div>
@@ -97,23 +90,23 @@
             <div class="flex flex-wrap justify-center gap-12 md:gap-16">
                 <div class="group cursor-pointer w-full sm:w-[300px]">
                     <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
-                        <img src="./img/mobcontrol.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <img src="./img/south park.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                             <span class="text-white font-bold tracking-widest text-xs uppercase italic">Play Now <i class="fa-solid fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
-                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Mob Control</h4>
+                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">South Park</h4>
                     <p class="text-purple-500 text-center text-xs font-bold uppercase tracking-[0.2em] mt-2 italic">#1 Arcade Strategy</p>
                 </div>
 
                 <div class="group cursor-pointer w-full sm:w-[300px]">
                     <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
-                        <img src="./img/helixjump.avif" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <img src="./img/fallguy.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                             <span class="text-white font-bold tracking-widest text-xs uppercase italic">Play Now <i class="fa-solid fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
-                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Helix Jump</h4>
+                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Fall Guy</h4>
                     <p class="text-purple-500 text-center text-xs font-bold uppercase tracking-[0.2em] mt-2 italic">#1 Action Hit</p>
                 </div>
 
