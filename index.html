@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoxPublisher | Leading Mobile Game Publisher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; margin: 0; }
+        .fade-transition { transition: opacity 0.8s ease-in-out; }
+        
+        /* Banner Effect: Mobile blur | Laptop sharp */
+        .game-banner { filter: blur(15px) brightness(0.4); }
+        @media (min-width: 1024px) {
+            .game-banner { filter: blur(1px) brightness(0.6); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full flex justify-between items-center px-6 md:px-16 py-6 z-50 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-md">
+        <div class="text-2xl font-black uppercase tracking-tighter italic">
+            Nox<span class="text-purple-500">PUBLISHER</span>
+        </div>
+        <div class="hidden lg:flex space-x-10 font-bold text-[11px] uppercase tracking-[0.2em]">
+            <a href="#games" class="hover:text-purple-400 transition">Our Games</a>
+            <a href="#publishing" class="hover:text-purple-400 transition">Publishing</a>
+            <a href="#careers" class="hover:text-purple-400 transition">Careers</a>
+            <a href="#news" class="hover:text-purple-400 transition">News</a>
+            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        </div>
+        <button class="bg-white text-black px-6 py-2 rounded-full font-black text-[12px] uppercase hover:bg-purple-600 hover:text-white transition-all transform active:scale-95">
+            Submit Your Game
+        </button>
+    </nav>
+
+    <section class="relative h-screen w-full flex items-center overflow-hidden">
+        <div id="bg-container" class="absolute inset-0 z-0">
+            <div id="bg1" class="fade-transition absolute inset-0 opacity-100">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG90ZzRqamcxbzR3cTRzdG8wc3llbjZhYzdocGNmcmxrOW9iNXJvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/erZedjYqVvChV2j1GD/giphy.gif" class="w-full h-full object-cover game-banner">
+            </div>
+            <div id="bg2" class="fade-transition absolute inset-0 opacity-0">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZueHlhNXZxeHlyemZueHlhNXZxeHlyemZueHlhNXZxeHlyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L8G62K8J7C3J6/giphy.gif" class="w-full h-full object-cover game-banner">
+            </div>
+            <div id="bg3" class="fade-transition absolute inset-0 opacity-0">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjB6amlyMHJpZWpsY3h3bXF6ZXZ4Z3p4Z3p4Z3p4Z3p4Z3p4Z3p4JmVwP12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMGpxx33TdqyM8/giphy.gif" class="w-full h-full object-cover game-banner">
+            </div>
+        </div>
+        <div class="relative z-10 container mx-auto px-8 md:px-20">
+            <div class="max-w-4xl">
+                <div id="info1" class="game-info fade-transition block opacity-100">
+                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter italic">MOB <br> <span class="text-blue-500">CONTROL</span></h1>
+                    <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">The always fresh, oddly satisfying strategy game.</p>
+                </div>
+                <div id="info2" class="game-info fade-transition hidden opacity-0">
+                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter text-pink-500 italic">COLLECT <br> <span class="text-white">EM ALL</span></h1>
+                    <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">Clear the dots and enjoy the smooth puzzle experience.</p>
+                </div>
+                <div id="info3" class="game-info fade-transition hidden opacity-0">
+                    <h1 class="text-6xl md:text-[120px] font-black italic uppercase leading-[0.9] mb-6 tracking-tighter text-yellow-400 italic">HELIX <br> <span class="text-white">JUMP</span></h1>
+                    <p class="text-lg md:text-2xl font-bold text-gray-200 mb-10 max-w-xl drop-shadow-2xl italic">An exciting adventure of the bouncing ball.</p>
+                </div>
+
+                <div class="flex space-x-4 mb-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="h-10 md:h-12 cursor-pointer transition hover:scale-105">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-10 md:h-12 cursor-pointer transition hover:scale-105">
+                </div>
+
+                <div class="flex space-x-4">
+                    <button onclick="changeSlide('prev')" class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                        <i class="fa-solid fa-chevron-left text-lg"></i>
+                    </button>
+                    <button onclick="changeSlide('next')" class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                        <i class="fa-solid fa-chevron-right text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="py-32 bg-black px-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center mb-16 text-center">
+                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">Our Hits</h2>
+                <div class="w-24 h-2 bg-purple-500 rounded-full"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-12 md:gap-16">
+                <div class="group cursor-pointer w-full sm:w-[300px]">
+                    <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
+                        <img src="./img/mobcontrol.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                            <span class="text-white font-bold tracking-widest text-xs uppercase italic">Play Now <i class="fa-solid fa-arrow-right ml-2"></i></span>
+                        </div>
+                    </div>
+                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Mob Control</h4>
+                    <p class="text-purple-500 text-center text-xs font-bold uppercase tracking-[0.2em] mt-2 italic">#1 Arcade Strategy</p>
+                </div>
+
+                <div class="group cursor-pointer w-full sm:w-[300px]">
+                    <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
+                        <img src="./img/helixjump.avif" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                            <span class="text-white font-bold tracking-widest text-xs uppercase italic">Play Now <i class="fa-solid fa-arrow-right ml-2"></i></span>
+                        </div>
+                    </div>
+                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Helix Jump</h4>
+                    <p class="text-purple-500 text-center text-xs font-bold uppercase tracking-[0.2em] mt-2 italic">#1 Action Hit</p>
+                </div>
+
+                <div class="group cursor-pointer w-full sm:w-[300px]">
+                    <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
+                        <img src="./img/callectemall.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                            <span class="text-white font-bold tracking-widest text-xs uppercase italic">Play Now <i class="fa-solid fa-arrow-right ml-2"></i></span>
+                        </div>
+                    </div>
+                    <h4 class="font-black text-2xl text-center italic uppercase tracking-tighter">Collect Em All</h4>
+                    <p class="text-purple-500 text-center text-xs font-bold uppercase tracking-[0.2em] mt-2 italic">#1 Puzzle Game</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-900/30 border-y border-white/5">
+        <div class="container mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-16 italic">What our <span class="text-purple-500">partners</span> say</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-black/40 p-10 rounded-[2.5rem] text-left border border-white/5 shadow-xl hover:border-purple-500/30 transition duration-500">
+                    <p class="text-lg text-gray-300 italic mb-8">"Working with NoxPublisher completely transformed our studio. From 10k downloads, our game hit 50 million in just 3 months."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="./img/9427f0e3-fc62-4da2-822f-82bfad582af-1549214231153-2551.webp" alt="CEO" class="w-12 h-12 rounded-full object-cover border border-white/10">
+                        <div>
+                            <div class="font-bold uppercase text-sm italic">CEO, Pixel Studio</div>
+                            <div class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Independent Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-black/40 p-10 rounded-[2.5rem] text-left border border-white/5 shadow-xl hover:border-blue-500/30 transition duration-500">
+                    <p class="text-lg text-gray-300 italic mb-8">"Their data is incredibly transparent. We knew exactly where to optimize to reach the target KPIs."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="./img/9427f0e3-fc62-4da2-822f-82bfad582af-1549214231153-2551.webp" alt="Lead Dev" class="w-12 h-12 rounded-full object-cover border border-white/10">
+                        <div>
+                            <div class="font-bold uppercase text-sm italic">Lead Dev, GameVibe</div>
+                            <div class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Partner Studio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publishing" class="py-32 bg-black overflow-hidden">
+        <div class="container mx-auto px-8 md:px-16 flex flex-col lg:flex-row items-center gap-20">
+            <div class="lg:w-1/2">
+                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-8 leading-none">Global <br><span class="text-purple-500">Impact.</span></h2>
+                <p class="text-gray-400 text-lg mb-8 font-medium italic">We reach 150+ countries with a massive user network. Your game will be known by the entire world.</p>
+                <div class="grid grid-cols-2 gap-8 font-black italic uppercase">
+                    <div>
+                        <div class="text-3xl text-white">Europe</div>
+                        <div class="text-sm text-gray-600 tracking-widest uppercase">30% Users</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl text-white">Asia</div>
+                        <div class="text-sm text-gray-600 tracking-widest uppercase">45% Users</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative">
+                <div class="opacity-30 hover:opacity-100 transition duration-1000">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg" class="w-full invert" alt="World Map">
+                </div>
+                <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-purple-500 rounded-full animate-ping"></div>
+                <div class="absolute top-1/2 left-2/3 w-3 h-3 bg-blue-500 rounded-full animate-ping"></div>
+                <div class="absolute bottom-1/3 left-1/2 w-3 h-3 bg-pink-500 rounded-full animate-ping"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers" class="py-32 bg-zinc-950 border-t border-white/5">
+        <div class="container mx-auto px-8 md:px-16">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
+                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none">Join the <br><span class="text-blue-500">Team.</span></h2>
+                <p class="text-gray-400 max-w-md font-medium italic">We are always looking for exceptional talent to create the next global hit.</p>
+            </div>
+            <div class="grid gap-4">
+                <div class="group bg-black/40 border border-white/5 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center hover:bg-blue-600/10 hover:border-blue-500/30 transition duration-500 cursor-pointer">
+                    <div>
+                        <h4 class="text-2xl font-black italic uppercase">Senior Game Designer</h4>
+                        <p class="text-blue-500 text-xs font-bold uppercase tracking-widest mt-1">Full-time | Remote / Hanoi</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-8 py-3 bg-white text-black rounded-full font-black uppercase text-[10px] group-hover:bg-blue-500 group-hover:text-white transition">Apply Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+                </div>
+                <div class="group bg-black/40 border border-white/5 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center hover:bg-purple-600/10 hover:border-purple-500/30 transition duration-500 cursor-pointer">
+                    <div>
+                        <h4 class="text-2xl font-black italic uppercase">Unity Game Developer</h4>
+                        <p class="text-purple-500 text-xs font-bold uppercase tracking-widest mt-1">Full-time | London / Tokyo</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-8 py-3 bg-white text-black rounded-full font-black uppercase text-[10px] group-hover:bg-purple-500 group-hover:text-white transition">Apply Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="py-32 bg-black">
+        <div class="container mx-auto px-8 md:px-16">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">Latest <span class="text-pink-500">News</span></h2>
+                <div class="w-20 h-1.5 bg-pink-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-zinc-900 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em] mb-3"><i class="fa-regular fa-calendar-days mr-2"></i>Feb 25, 2026</div>
+                    <h4 class="text-xl font-black italic uppercase group-hover:text-pink-400 transition">Mob Control Hits 100M Players Worldwide</h4>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-zinc-900 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em] mb-3"><i class="fa-regular fa-calendar-days mr-2"></i>Jan 12, 2026</div>
+                    <h4 class="text-xl font-black italic uppercase group-hover:text-pink-400 transition">Opening New Headquarters in Central London</h4>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-zinc-900 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em] mb-3"><i class="fa-regular fa-calendar-days mr-2"></i>Dec 05, 2025</div>
+                    <h4 class="text-xl font-black italic uppercase group-hover:text-pink-400 transition">Top 5 Mobile Game Trends for 2026</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-white text-black">
+        <div class="container mx-auto px-8 md:px-16">
+            <div class="max-w-5xl mx-auto flex flex-col lg:flex-row gap-20">
+                <div class="lg:w-1/2">
+                    <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-6 leading-none italic">Ready to <br><span class="text-purple-600">Publish?</span></h2>
+                    <p class="text-gray-500 font-bold mb-10 italic">Submit your game info. We will get back to you as soon as possible.</p>
+                    <div class="space-y-4 font-black italic uppercase text-lg">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-purple-600"></i>
+                            <span>publish@noxpublisher.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-purple-600"></i>
+                            <span>Hanoi | Tokyo | London</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-zinc-100 p-8 md:p-12 rounded-[2.5rem]">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-2">Game Name</label>
+                            <input type="text" class="w-full bg-transparent border-b-2 border-gray-300 py-3 focus:outline-none focus:border-purple-600 transition font-bold" placeholder="Your Game Title">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-2">Email Address</label>
+                            <input type="email" class="w-full bg-transparent border-b-2 border-gray-300 py-3 focus:outline-none focus:border-purple-600 transition font-bold" placeholder="Your Work Email">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-2">Game Link / Video</label>
+                            <input type="text" class="w-full bg-transparent border-b-2 border-gray-300 py-3 focus:outline-none focus:border-purple-600 transition font-bold" placeholder="YouTube, Drive, etc.">
+                        </div>
+                        <button type="submit" class="w-full bg-black text-white py-6 rounded-2xl font-black uppercase italic tracking-widest hover:bg-purple-600 transition shadow-xl transform active:scale-95">
+                            Submit your prototype <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-20 px-8 border-t border-white/5">
+        <div class="container mx-auto text-center">
+            <div class="text-3xl font-black uppercase italic tracking-tighter mb-8">
+                NOX<span class="text-purple-500">PUBLISHER</span>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-zinc-500 hover:text-white transition text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-zinc-500 hover:text-white transition text-xl"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-zinc-500 hover:text-white transition text-xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-zinc-500 hover:text-white transition text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="text-zinc-500 hover:text-white transition text-xl"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="flex justify-center space-x-8 mb-12 text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-500">
+                <a href="#games" class="hover:text-white transition">Games</a>
+                <a href="#publishing" class="hover:text-white transition">Publishing</a>
+                <a href="#careers" class="hover:text-white transition">Careers</a>
+                <a href="#news" class="hover:text-white transition">News</a>
+            </div>
+            <p class="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">© 2026 NoxPublisher. Designed for hitmakers.</p>
+        </div>
+    </footer>
+
+    <script>
+        let current = 1;
+        const total = 3;
+
+        function changeSlide(direction) {
+            document.getElementById(`bg${current}`).style.opacity = "0";
+            const currentInfo = document.getElementById(`info${current}`);
+            currentInfo.classList.replace('block', 'hidden');
+            currentInfo.classList.remove('opacity-100');
+
+            if(direction === 'next') current = current >= total ? 1 : current + 1;
+            else current = current <= 1 ? total : current - 1;
+
+            document.getElementById(`bg${current}`).style.opacity = "1";
+            const nextInfo = document.getElementById(`info${current}`);
+            nextInfo.classList.replace('hidden', 'block');
+            setTimeout(() => { nextInfo.classList.add('opacity-100'); }, 50);
+        }
+        setInterval(() => changeSlide('next'), 6000);
+    </script>
+</body>
+</html>
