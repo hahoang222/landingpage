@@ -38,9 +38,9 @@
             <a href="#news" class="hover:text-purple-400 transition">News</a>
             <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
         </div>
-        <button class="bg-white text-black px-6 py-2 rounded-full font-black text-[12px] uppercase hover:bg-purple-600 hover:text-white transition-all transform active:scale-95">
-            Submit Your Game
-        </button>
+        <button class="bg-white text-black px-4 md:px-6 py-1.5 md:py-2 rounded-full font-black text-[10px] md:text-[12px] uppercase hover:bg-purple-600 hover:text-white transition-all transform active:scale-95 whitespace-nowrap ml-4">
+    Submit Your Game
+</button>
     </nav>
 
     <section class="relative h-screen w-full flex items-center overflow-hidden">
@@ -86,7 +86,6 @@
                 <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">Our Hits</h2>
                 <div class="w-24 h-2 bg-purple-500 rounded-full"></div>
             </div>
-
             <div class="flex flex-wrap justify-center gap-12 md:gap-16">
                 <div class="group cursor-pointer w-full sm:w-[300px]">
                     <div class="aspect-square bg-zinc-900 rounded-[3rem] overflow-hidden mb-6 shadow-2xl border border-white/5 relative">
@@ -179,30 +178,22 @@
         </div>
     </section>
 
-    <section id="careers" class="py-32 bg-zinc-950 border-t border-white/5">
-        <div class="container mx-auto px-8 md:px-16">
-            <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
-                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none">Join the <br><span class="text-blue-500">Team.</span></h2>
-                <p class="text-gray-400 max-w-md font-medium italic">We are always looking for exceptional talent to create the next global hit.</p>
-            </div>
-            <div class="grid gap-4">
-                <div class="group bg-black/40 border border-white/5 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center hover:bg-blue-600/10 hover:border-blue-500/30 transition duration-500 cursor-pointer">
-                    <div>
-                        <h4 class="text-2xl font-black italic uppercase">Senior Game Designer</h4>
-                        <p class="text-blue-500 text-xs font-bold uppercase tracking-widest mt-1">Full-time | Remote / Hanoi</p>
-                    </div>
-                    <button class="mt-6 md:mt-0 px-8 py-3 bg-white text-black rounded-full font-black uppercase text-[10px] group-hover:bg-blue-500 group-hover:text-white transition">Apply Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
-                </div>
-                <div class="group bg-black/40 border border-white/5 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center hover:bg-purple-600/10 hover:border-purple-500/30 transition duration-500 cursor-pointer">
-                    <div>
-                        <h4 class="text-2xl font-black italic uppercase">Unity Game Developer</h4>
-                        <p class="text-purple-500 text-xs font-bold uppercase tracking-widest mt-1">Full-time | London / Tokyo</p>
-                    </div>
-                    <button class="mt-6 md:mt-0 px-8 py-3 bg-white text-black rounded-full font-black uppercase text-[10px] group-hover:bg-purple-500 group-hover:text-white transition">Apply Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
-                </div>
-            </div>
+    <section class="py-20 bg-black flex flex-col items-center justify-center text-center px-6">
+    <h2 class="text-4xl md:text-7xl font-black italic uppercase text-white">
+        Join the <span class="text-blue-500">Team.</span>
+    </h2>
+    
+    <div class="mt-12 w-full max-w-2xl flex flex-col items-center gap-6">
+        <div class="bg-zinc-900 p-8 rounded-3xl w-full flex flex-col items-center text-center">
+            <h3 class="text-white text-xl font-bold uppercase">Senior Game Designer</h3>
+            <p class="text-blue-400 text-xs font-bold mt-2">FULL-TIME | REMOTE / HANOI</p>
+            
+            <button class="mt-6 bg-white text-black px-8 py-3 rounded-full font-black text-xs uppercase hover:bg-blue-500 hover:text-white transition flex items-center gap-2">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="news" class="py-32 bg-black">
         <div class="container mx-auto px-8 md:px-16">
